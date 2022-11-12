@@ -28,7 +28,7 @@
                 <p>Order hari ini</p>
               </div>
               <div class="icon">
-                <i class="fa-solid fa-folder-plus"></i>
+                <i class="fa-solid fa-calendar-days"></i>
               </div>
               <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
             </div>
@@ -43,7 +43,7 @@
                 <p>Semua Order</p>
               </div>
               <div class="icon">
-                <i class="ion ion-stats-bars"></i>
+                <i class="fa-solid fa-wallet"></i>
               </div>
               <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
             </div>
@@ -58,7 +58,7 @@
                 <p>Pembelian Hari Ini</p>
               </div>
               <div class="icon">
-                <i class="ion ion-person-add"></i>
+                <i class="fa-solid fa-briefcase"></i>
               </div>
               <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
             </div>

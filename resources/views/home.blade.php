@@ -7,6 +7,6 @@
     <title>Home</title>
 </head>
 <body>
-    <h2>Ini Halaman Homne dengan landing page </h2>
+    <h2>Ini Halaman Home dengan landing page </h2>
 </body>
 </html>

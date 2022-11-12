@@ -19,9 +19,9 @@
       <div class="container-fluid">
         <!-- Small boxes (Stat box) -->
         <div class="row">
-          <div class="col-lg-3 col-6">
+          <div class="col-lg-4 col-6">
             <!-- small box -->
-            <div class="small-box bg-info">
+            <div class="small-box bg-primary">
               <div class="inner">
                 <h3>150</h3>
 
@@ -34,7 +34,7 @@
             </div>
           </div>
           <!-- ./col -->
-          <div class="col-lg-3 col-6">
+          <div class="col-lg-4 col-6">
             <!-- small box -->
             <div class="small-box bg-success">
               <div class="inner">
@@ -49,7 +49,7 @@
             </div>
           </div>
           <!-- ./col -->
-          <div class="col-lg-3 col-6">
+          <div class="col-lg-4 col-6">
             <!-- small box -->
             <div class="small-box bg-warning">
               <div class="inner">
@@ -58,55 +58,55 @@
                 <p>Pembelian Hari Ini</p>
               </div>
               <div class="icon">
-                <i class="fa-solid fa-briefcase"></i>
+                <i class="fa-solid fa-cart-shopping"></i>
               </div>
               <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
             </div>
           </div>
           <!-- ./col -->
-          <div class="col-lg-3 col-6">
+          <div class="col-lg-4 col-6">
             <!-- small box -->
-            <div class="small-box bg-danger">
+            <div class="small-box bg-secondary">
               <div class="inner">
                 <h3>65</h3>
 
                 <p>Semua Pembelian</p>
               </div>
               <div class="icon">
-                <i class="ion ion-pie-graph"></i>
+                <i class="fa-solid fa-bag-shopping"></i>
               </div>
               <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
             </div>
           </div>
-          <div class="col-lg-3 col-6">
+          <div class="col-lg-4 col-6">
             <!-- small box -->
             <div class="small-box bg-danger">
               <div class="inner">
                 <h3>65</h3>
 
-                <p>Semua Pembelian</p>
+                <p>Uang Pengeluaran</p>
               </div>
               <div class="icon">
-                <i class="ion ion-pie-graph"></i>
+                <i class="fa-solid fa-dollar-sign"></i>
               </div>
               <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
             </div>
           </div>
-          <div class="col-lg-3 col-6">
+          <div class="col-lg-4 col-6">
             <!-- small box -->
-            <div class="small-box bg-danger">
+            <div class="small-box bg-info">
               <div class="inner">
                 <h3>65</h3>
 
-                <p>Semua Pembelian</p>
+                <p>Profit</p>
               </div>
               <div class="icon">
-                <i class="ion ion-pie-graph"></i>
+                <i class="fa-solid fa-chart-line"></i>
               </div>
               <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
             </div>
           </div>
-          <div class="col-lg-3 col-6">
+          <div class="col-lg-4 col-6">
 
               <!-- /.card-header -->
               <div class="card-body pt-0">

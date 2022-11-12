@@ -28,7 +28,7 @@
                 <p>Order hari ini</p>
               </div>
               <div class="icon">
-                <i class="ion ion-bag"></i>
+                <i class="fa-solid fa-folder-plus"></i>
               </div>
               <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
             </div>

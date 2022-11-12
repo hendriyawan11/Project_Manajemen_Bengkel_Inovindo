@@ -2,7 +2,7 @@
      <!-- Brand Logo -->
      <a href="index3.html" class="brand-link">
       <img src="{{ asset ('lte/dist/img/oto.logo.jpg')}}" alt="Bengkel TBSM" class="brand-image img-circle elevation-3" style="opacity: .8">
-      <span class="brand-text font-weight-light">Unit Produksi TBSM</span>
+      <span class="brand-text font-weight-light ">Unit Produksi TBSM</span>
     </a>
     <!-- Right navbar links -->
     <ul class="navbar-nav ml-auto">

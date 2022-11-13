@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Manajemen Bengkel | Dashboard</title>
 
+
+  <!--css -->
+<link rel="stylesheet" href="{{ asset('css/style.css') }}">
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
   <!-- Font Awesome -->

@@ -1,5 +1,5 @@
 <aside class="main-sidebar sidebar-dark-primary elevation-4">
-   
+
     <!-- Sidebar -->
     <div class="sidebar">
       <!-- Sidebar user panel (optional) -->
@@ -64,7 +64,7 @@
 
             <li class="nav-item">
               <a href="#" class="nav-link">
-                 <i class="fa-solid fa-handshake"></i>
+                 <i class="fa-solid fa-gear"></i>
                 <p>
                   Sparepart
                   <i class="right fas fa-angle-left"></i>
@@ -88,7 +88,7 @@
             </li>
             <li class="nav-item">
             <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-chart-pie"></i>
+            <i class="fa-solid fa-screwdriver-wrench"></i>
               <p>
                 Service
               </p>
@@ -96,17 +96,17 @@
             </li>
             <li class="nav-item">
             <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-chart-pie"></i>
-              <p>
-                Service
-              </p>
-            </a>
-            </li>
-            <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-chart-pie"></i>
+             <i class="fa-solid fa-user-gear"></i>
               <p>
                 Mekanik
+              </p>
+            </a>
+            </li>
+            <li class="nav-item">
+            <a href="#" class="nav-link">
+            <i class="fa-solid fa-book-bookmark"></i>
+              <p>
+           Laporan
               </p>
             </a>
             </li>

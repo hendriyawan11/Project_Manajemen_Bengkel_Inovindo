@@ -48,7 +48,7 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="pages/charts/chartjs.html" class="nav-link">
+                <a href="ordersparepart.blade.php" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Order Spareparts</p>
                 </a>
@@ -64,31 +64,30 @@
 
             <li class="nav-item">
               <a href="#" class="nav-link">
-                 <i class="fa-solid fa-gear"></i>
+                 <i class="fa-solid fa-handshake"></i>
                 <p>
-                  Sparepart
+                  Spareparts
                   <i class="right fas fa-angle-left"></i>
                 </p>
               </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="pages/charts/chartjs.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Pembelian</p>
-                </a>
+              <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a href="pages/charts/chartjs.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Pembelian</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="pages/charts/flot.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Semua Spareparts</p>
+                  </a>
+                </li>
+              </ul>
               </li>
-              <li class="nav-item">
-                <a href="pages/charts/flot.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Semua Sparepart</p>
-                </a>
-              </li>
-            </ul>
-            </li>
-            </li>
             <li class="nav-item">
             <a href="#" class="nav-link">
-            <i class="fa-solid fa-screwdriver-wrench"></i>
+              <i class="nav-icon fas fa-chart-pie"></i>
               <p>
                 Service
               </p>
@@ -96,20 +95,21 @@
             </li>
             <li class="nav-item">
             <a href="#" class="nav-link">
-             <i class="fa-solid fa-user-gear"></i>
+              <i class="nav-icon fas fa-chart-pie"></i>
               <p>
-                Mekanik
+                Service
               </p>
             </a>
             </li>
             <li class="nav-item">
             <a href="#" class="nav-link">
-            <i class="fa-solid fa-book-bookmark"></i>
+              <i class="nav-icon fas fa-chart-pie"></i>
               <p>
-           Laporan
+                Mekanik
               </p>
             </a>
             </li>
+
       </nav>
       <!-- /.sidebar-menu -->
     </div>

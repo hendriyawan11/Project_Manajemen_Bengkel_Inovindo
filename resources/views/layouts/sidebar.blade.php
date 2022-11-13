@@ -32,8 +32,8 @@
           <li class="nav-item menu-open">
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="/" class="nav-link active">
-                  <i class="far fa-circle nav-icon"></i>
+                <a href="/" class="nav-link">
+                  <i class="fa-solid fa-house-laptop"></i>
                   <p>Dashboard</p>
                 </a>
               </li>
@@ -64,7 +64,7 @@
 
             <li class="nav-item">
               <a href="#" class="nav-link">
-                 <i class="fa-solid fa-handshake"></i>
+                 <i class="fa-solid fa-gear"></i>
                 <p>
                   Spareparts
                   <i class="right fas fa-angle-left"></i>
@@ -87,7 +87,7 @@
               </li>
             <li class="nav-item">
             <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-chart-pie"></i>
+            <i class="fa-solid fa-screwdriver-wrench"></i>
               <p>
                 Service
               </p>
@@ -95,17 +95,17 @@
             </li>
             <li class="nav-item">
             <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-chart-pie"></i>
+              <i class="fa-solid fa-user-gear"></i>
               <p>
-                Service
+               Mekanik
               </p>
             </a>
             </li>
             <li class="nav-item">
             <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-chart-pie"></i>
+             <i class="fa-solid fa-book-bookmark"></i>
               <p>
-                Mekanik
+                Laporan
               </p>
             </a>
             </li>

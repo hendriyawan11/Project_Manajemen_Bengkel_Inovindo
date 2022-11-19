@@ -49,19 +49,21 @@
           </div>
           <!-- ./col -->
           <div class="col-lg-4 col-6">
-            <!-- small box -->
-            <div class="small-box bg-warning">
+            {{-- small box --}}
+            <div class="small-box bg-success">
               <div class="inner">
-                <h3>44</h3>
+                <h3>65</h3>
 
-                <p>Pembelian Hari Ini</p>
+                <p>Semua Pembelian</p>
               </div>
               <div class="icon">
-                <i class="fa-solid fa-briefcase"></i>
+                <i class="fa-solid fa-cart-shopping"></i>
               </div>
               <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
             </div>
+
           </div>
+
           <!-- ./col -->
           <div class="col-lg-4 col-6">
             <!-- small box -->

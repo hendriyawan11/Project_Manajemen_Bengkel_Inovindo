@@ -1,7 +1,9 @@
 <?php
 
-use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Layout;
+use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\Route;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -16,5 +18,8 @@ use App\Http\Controllers\Layout;
 
 Route::get('/', function() {
     return view ('layouts.home');
+});
+Route::get('/order', function() {
+    return view ('order_sparepart');
 });
 

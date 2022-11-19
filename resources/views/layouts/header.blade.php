@@ -1,5 +1,5 @@
 
-<nav class="main-header navbar navbar-expand navbar-white navbar-light">
+<nav class="main-header navbar navbar-expand navbar-light ">
      <!-- Brand Logo -->
      <a href="index3.html" class="brand-link">
       <img src="{{ asset ('lte/dist/img/oto.logo.jpg')}}" alt="Bengkel TBSM" class="brand-image img-circle elevation-3" style="opacity: .8">

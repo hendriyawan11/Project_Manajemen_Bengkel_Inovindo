@@ -1,5 +1,4 @@
-<aside class="main-sidebar sidebar-dark-primary elevation-4">
-
+<aside class="main-sidebar sidebar-dark-primary bg-black elevation-4">
     <!-- Sidebar -->
     <div class="sidebar">
       <!-- Sidebar user panel (optional) -->
@@ -48,7 +47,7 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="ordersparepart.blade.php" class="nav-link">
+                <a href="/order" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Order Spareparts</p>
                 </a>

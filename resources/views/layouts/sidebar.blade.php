@@ -47,13 +47,13 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="/order" class="nav-link">
+                <a href="/order_sparepart" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Order Spareparts</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="pages/charts/flot.html" class="nav-link">
+                <a href="/order_jasa" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Order Jasa Service</p>
                 </a>
@@ -71,13 +71,13 @@
               </a>
               <ul class="nav nav-treeview">
                 <li class="nav-item">
-                  <a href="pages/charts/chartjs.html" class="nav-link">
+                  <a href="/pembelian" class="nav-link">
                     <i class="far fa-circle nav-icon"></i>
                     <p>Pembelian</p>
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a href="pages/charts/flot.html" class="nav-link">
+                  <a href="/semua_sparepart" class="nav-link">
                     <i class="far fa-circle nav-icon"></i>
                     <p>Semua Spareparts</p>
                   </a>
@@ -85,7 +85,7 @@
               </ul>
               </li>
             <li class="nav-item">
-            <a href="#" class="nav-link">
+            <a href="/servis" class="nav-link">
             <i class="fa-solid fa-screwdriver-wrench"></i>
               <p>
                 Service
@@ -93,7 +93,7 @@
             </a>
             </li>
             <li class="nav-item">
-            <a href="#" class="nav-link">
+            <a href="/mekanik" class="nav-link">
               <i class="fa-solid fa-user-gear"></i>
               <p>
                Mekanik
@@ -101,7 +101,7 @@
             </a>
             </li>
             <li class="nav-item">
-            <a href="#" class="nav-link">
+            <a href="/laporan" class="nav-link">
              <i class="fa-solid fa-book-bookmark"></i>
               <p>
                 Laporan

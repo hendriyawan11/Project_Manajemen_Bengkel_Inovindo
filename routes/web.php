@@ -19,7 +19,28 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function() {
     return view ('layouts.home');
 });
-Route::get('/order', function() {
+Route::get('/order_sparepart', function() {
     return view ('order_sparepart');
+});
+Route::get('/order_jasa', function() {
+    return view ('jasa_servis');
+});
+Route::get('/pembelian', function() {
+    return view ('pembelian');
+});
+Route::get('/semua_sparepart', function() {
+    return view ('semua_sparepart');
+});
+Route::get('/servis', function() {
+    return view ('servis');
+});
+Route::get('/mekanik', function() {
+    return view ('mekanik');
+});
+Route::get('/laporan', function() {
+    return view ('laporan');
+});
+Route::get('/login', function() {
+    return view ('login');
 });
 

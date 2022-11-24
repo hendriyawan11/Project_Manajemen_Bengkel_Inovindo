@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @extends('layouts.panel')
 
 @section('content')
@@ -34,3 +35,8 @@
     <!-- /.content -->
   </div>
   @endsection
+=======
+<h2>LAPORAN
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis alias aspernatur recusandae enim nisi! Quos quo neque illo natus dolorum voluptatem magnam iste laudantium, quisquam blanditiis ea error. Itaque, voluptas!
+</h2>
+>>>>>>> 0b64df64327a3394990c831dfcf4627fa34a78f3

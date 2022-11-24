@@ -1,22 +1,36 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Order Jasa  Service</title>
-</head>
-<body>
- 
-	<h2>ORDER JASA SERVICE</h2>
-	<br/>
-	<br/>
- 
-	<form action="/pegawai/store" method="post">
-		{{ csrf_field() }}
-		ID Service<input type="number" name="id_servis" required="required"> <br/>
-		Nama Service <input type="text" name="nama_servis" required="required"> <br/>
-		Deskripsi <input type="text" name="deskripsi" required="required"> <br/>
-		Mekanik <input type="text" name="mekanik" required="required"> <br/>
-		<input type="submit" value="Simpan Data">
-	</form>
- 
-</body>
-</html>
+@extends('layouts.panel')
+
+@section('content')
+ <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <div class="content-header">
+      <div class="container-fluid">
+        <div class="row mb-2">
+          <div class="col-sm-6">
+            <h1 class="m-0">Order Jasa Service</h1>
+          </div><!-- /.col -->
+        </div><!-- /.row -->
+      </div><!-- /.container-fluid -->
+    </div>
+    <!-- /.content-header -->
+
+    <!-- Main content -->
+   
+
+              <!-- /.card-header -->
+              <div class="card-body pt-0">
+                <!--The calendar -->
+                <div id="calendar" style="width: 100%"></div>
+              </div>
+              <!-- /.card-body -->
+            </div>
+            <!-- /.card -->
+          </section>
+          <!-- right col -->
+        </div>
+        <!-- /.row (main row) -->
+      </div><!-- /.container-fluid -->
+    </section>
+    <!-- /.content -->
+  </div>
+  @endsection

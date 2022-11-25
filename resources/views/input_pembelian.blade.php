@@ -7,8 +7,7 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0">Data Servis</h1>
-            <a href="/input_servis" class="btn btn-primary" role="button" data-bs-toggle="button">Input Data Service</a>
+            <h1 class="m-0">Input Data Pembelian</h1>
           </div><!-- /.col -->
         </div><!-- /.row -->
       </div><!-- /.container-fluid -->

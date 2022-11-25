@@ -43,6 +43,15 @@ Route::get('/laporan', function() {
 Route::get('/login', function() {
     return view ('login');
 });
+Route::get('/input_servis', function() {
+    return view ('input_servis');
+});
+Route::get('/input_mekanik', function() {
+    return view ('input_mekanik');
+});
+Route::get('/input_pembelian', function() {
+    return view ('input_pembelian');
+});
 
 
 Auth::routes();

@@ -8,7 +8,9 @@
         <div class="row mb-2">
           <div class="col-sm-6">
             <h1 class="m-0">Pembelian Produk</h1>
-            <div class="container mt-3">           
+            <div class="container mt-3"> 
+              <a href="/input_pembelian" class="btn btn-primary" role="button" data-bs-toggle="button">Input Data Pembelian</a>
+              <p>          
               <table class="table table-bordered">
                 <thead>
                   <tr>
@@ -38,20 +40,22 @@
                       </div>
                     </td>
                     <td>
-                      <div class="btn-group">
-                        <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <div class="dropdown">
+                        <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
                           Detail
                         </button>
                         <ul class="dropdown-menu">
-                          ...
+                          <li><a class="dropdown-item" href="#">Done</a></li>
+                          <li><a class="dropdown-item" href="#">Hapus</a></li>
+                          <li><a class="dropdown-item" href="#">Edit</a></li>
                         </ul>
                       </div>
                     </td>
                   </tr>
                 </tbody>
               </table>
+            </p>
             </div>
-            <a href="/input_pembelian" class="btn btn-primary" role="button" data-bs-toggle="button">Input Data Pembelian</a>
           </div><!-- /.col -->
         </div><!-- /.row -->
       </div><!-- /.container-fluid -->

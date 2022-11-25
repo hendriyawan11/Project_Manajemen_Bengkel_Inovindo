@@ -8,6 +8,41 @@
         <div class="row mb-2">
           <div class="col-sm-6">
             <h1 class="m-0">Input Data Mekanik</h1>
+            <p>
+            <div class="row mb-3">
+                <label for="harga beli" class="col-sm-2 col-form-label">ID Mekanik</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" placeholder="ID Mekanik">
+                </div>
+              </div>
+              <div class="row mb-3">
+                <label for="merk" class="col-sm-2 col-form-label">Nama Mekanik</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" placeholder="Nama Mekanik">
+                </div>
+              </div>
+              <div class="row mb-3">
+                <label for="merk" class="col-sm-2 col-form-label">Jenis Kelamin</label>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                  <label class="form-check-label" for="flexRadioDefault1">
+                    Laki-laki
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                  <label class="form-check-label" for="flexRadioDefault2">
+                    Perempuan
+                  </label>
+                </div>
+               </div>
+              <div class="row mb-3">
+                <label for="merk" class="col-sm-2 col-form-label">Level Mekanik</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" placeholder="Level">
+                </div>
+              </div>
+              <button type="submit" class="btn btn-primary">Save</button>
           </div><!-- /.col -->
         </div><!-- /.row -->
       </div><!-- /.container-fluid -->
@@ -33,4 +68,5 @@
     </section>
     <!-- /.content -->
   </div>
+</p>
   @endsection

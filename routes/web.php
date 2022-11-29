@@ -17,7 +17,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function() {
-    return view ('layouts.home');
+    return view ('dashboard');
 });
 Route::get('/order_sparepart', function() {
     return view ('order_sparepart');
@@ -41,7 +41,7 @@ Route::get('/laporan', function() {
     return view ('laporan');
 });
 Route::get('/login', function() {
-    return view ('login');
+    return view ('layouts.login');
 });
 Route::get('/input_servis', function() {
     return view ('input_servis');
@@ -54,10 +54,3 @@ Route::get('/input_pembelian', function() {
 });
 
 
-Auth::routes();
-
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-
-Auth::routes();
-
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

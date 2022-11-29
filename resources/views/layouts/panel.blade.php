@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Manajemen Bengkel | Dashboard</title>
 
-
   <!--css -->
 <link rel="stylesheet" href="{{ asset('css/style.css') }}">
   <!-- Google Font: Source Sans Pro -->
@@ -36,16 +35,21 @@
 
 
   <!-- Preloader -->
-  <div class="preloader flex-column justify-content-center align-items-center">
-    <img class="animation__shake rounded-circle" src="{{ asset ('lte/dist/img/oto.logo.jpg')}}" alt="" height="60" width="60">
-  </div>
 
+@include('layouts.pre-loader')
 @include('layouts.header')
 @include('layouts.sidebar')
-@yield('content')
+@include('layouts.main-header')
+<!-- Main content -->
+    <section class="content">
+      <div class="container-fluid">
+        <!-- Small boxes (Stat box) -->
+       @yield('content')
+      </div><!-- /.container-fluid -->
+    </section>
+    <!-- /.content -->
+  </div>
 @include('layouts.footer')
-
-
 
 
   <aside class="control-sidebar control-sidebar-dark">

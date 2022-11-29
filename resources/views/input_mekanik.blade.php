@@ -1,5 +1,5 @@
 @extends('layouts.panel')
-
+@section('title' , 'Input Mekanik')
 @section('content')
  <div class="content-wrapper">
     <!-- Content Header (Page header) -->
@@ -69,4 +69,6 @@
     <!-- /.content -->
   </div>
 </p>
+=======
+>>>>>>> dd113545025993daf53828109a67fbb160d44711
   @endsection

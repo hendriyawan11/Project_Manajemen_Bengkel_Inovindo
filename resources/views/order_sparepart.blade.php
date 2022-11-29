@@ -1,6 +1,7 @@
 @extends('layouts.panel')
-
+@section('title' , 'Order Sparepart')
 @section('content')
+<<<<<<< HEAD
  <div class="content-wrapper">
     <!-- Content Header (Page header) -->
     <div class="content-header">
@@ -179,24 +180,7 @@
     </div>
 
     <!-- /.content-header -->
+=======
+>>>>>>> dd113545025993daf53828109a67fbb160d44711
 
-    <!-- Main content -->
-   
-
-              <!-- /.card-header -->
-              <div class="card-body pt-0">
-                <!--The calendar -->
-                <div id="calendar" style="width: 100%"></div>
-              </div>
-              <!-- /.card-body -->
-            </div>
-            <!-- /.card -->
-          </section>
-          <!-- right col -->
-        </div>
-        <!-- /.row (main row) -->
-      </div><!-- /.container-fluid -->
-    </section>
-    <!-- /.content -->
-  </div>
-  @endsection
+@endsection

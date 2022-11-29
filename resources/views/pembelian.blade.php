@@ -88,4 +88,7 @@
     </section>
     <!-- /.content -->
   </div>
+=======
+@section('title' , 'Pembelian')
+>>>>>>> dd113545025993daf53828109a67fbb160d44711
   @endsection

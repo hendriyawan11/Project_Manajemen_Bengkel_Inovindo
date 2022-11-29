@@ -6,7 +6,7 @@
     <div class="content-header">
       <div class="container-fluid">
         <div class="row mb-2">
-          <div class="col-sm-6">
+          <div class="col-md-12">
             <h1 class="m-0">Input Data Service</h1>
             <div class="row mb-3">
                 <label for="harga beli" class="col-sm-2 col-form-label">Harga Beli</label>

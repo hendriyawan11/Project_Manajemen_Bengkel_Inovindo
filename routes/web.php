@@ -52,6 +52,15 @@ Route::get('/input_mekanik', function() {
 Route::get('/input_pembelian', function() {
     return view ('input_pembelian');
 });
+Route::get('/checkout', function() {
+    return view ('checkout');
+});
+Route::get('/invoice', function() {
+    return view ('invoice');
+});
+Route::get('/invoice_print', function() {
+    return view ('invoice_print');
+});
 
 
 Auth::routes();

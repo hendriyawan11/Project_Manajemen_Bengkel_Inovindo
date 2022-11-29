@@ -7,68 +7,120 @@
     <div class="content-header">
       <div class="container-fluid">
         <div class="row mb-2">
-          <div class="col-sm-6">
+          <div class="col-md-12">
             <h1 class="m-0">Laporan Transaksi</h1>
-            <select class="form-select" aria-label="Default select example">
-              <option selected>Open this select menu</option>
-              <option value="1">One</option>
-              <option value="2">Two</option>
-              <option value="3">Three</option>
-            </select>
-            <select class="form-select" aria-label="Default select example">
-              <option selected>Open this select menu</option>
-              <option value="1">One</option>
-              <option value="2">Two</option>
-              <option value="3">Three</option>
-            </select>
-            <a class="btn btn-primary" href="#" role="button">Link</a>
-            <button class="btn btn-primary" type="submit">Button</button>
-            <div class="col-12">
-              <div class="bg-secondary rounded h-100 p-4">
-                  <h6 class="mb-4">Responsive Table</h6>
-                  <div class="table-responsive">
-                      <table class="table">
-                          <thead>
-                              <tr>
-                                  <th scope="col">#</th>
-                                  <th scope="col">First Name</th>
-                                  <th scope="col">Last Name</th>
-                                  <th scope="col">Email</th>
-                                  <th scope="col">Country</th>
-                                  <th scope="col">ZIP</th>
-                                  <th scope="col">Status</th>
-                              </tr>
-                          </thead>
-                          <tbody>
-                              <tr>
-                                  <th scope="row">1</th>
-                                  <td>John</td>
-                                  <td>Doe</td>
-                                  <td>jhon@email.com</td>
-                                  <td>USA</td>
-                                  <td>123</td>
-                                  <td>Member</td>
-                              </tr>
-                              <tr>
-                                  <th scope="row">2</th>
-                                  <td>Mark</td>
-                                  <td>Otto</td>
-                                  <td>mark@email.com</td>
-                                  <td>UK</td>
-                                  <td>456</td>
-                                  <td>Member</td>
-                              </tr>
-                              <tr>
-                                  <th scope="row">3</th>
-                                  <td>Jacob</td>
-                                  <td>Thornton</td>
-                                  <td>jacob@email.com</td>
-                                  <td>AU</td>
-                                  <td>789</td>
-                                  <td>Member</td>
-                              </tr>
-                          </tbody>
-                      </table>
+            <section class="content">
+
+              <!-- Default box -->
+              <div class="card">
+                <div class="card-header">
+                  <h3 class="card-title">Projects</h3>
+        
+                  <div class="card-tools">
+                    <button type="button" class="btn btn-tool" data-card-widget="collapse" title="Collapse">
+                      <i class="fas fa-minus"></i>
+                    </button>
+                    <button type="button" class="btn btn-tool" data-card-widget="remove" title="Remove">
+                      <i class="fas fa-times"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="card-body p-0">
+                  <table class="table table-striped projects">
+                      <thead>
+                          <tr>
+                              <th style="width: 1%">
+                                  #
+                              </th>
+                              <th style="width: 20%">
+                                  Project Name
+                              </th>
+                              <th style="width: 30%">
+                                  Team Members
+                              </th>
+                              <th>
+                                  Project Progress
+                              </th>
+                              <th style="width: 8%" class="text-center">
+                                  Status
+                              </th>
+                              <th style="width: 20%">
+                              </th>
+                          </tr>
+                      </thead>
+                      <tbody>
+                          <tr>
+                              <td>
+                                  #
+                              </td>
+                              <td>
+                                  <a>
+                                      AdminLTE v3
+                                  </a>
+                                  <br/>
+                                  <small>
+                                      Created 01.01.2019
+                                  </small>
+                              </td>
+                              <td>
+                                  <ul class="list-inline">
+                                      <li class="list-inline-item">
+                                          <img alt="Avatar" class="table-avatar" src="../../dist/img/avatar.png">
+                                      </li>
+                                      <li class="list-inline-item">
+                                          <img alt="Avatar" class="table-avatar" src="../../dist/img/avatar2.png">
+                                      </li>
+                                      <li class="list-inline-item">
+                                          <img alt="Avatar" class="table-avatar" src="../../dist/img/avatar3.png">
+                                      </li>
+                                      <li class="list-inline-item">
+                                          <img alt="Avatar" class="table-avatar" src="../../dist/img/avatar4.png">
+                                      </li>
+                                  </ul>
+                              </td>
+                              <td class="project_progress">
+                                  <div class="progress progress-sm">
+                                      <div class="progress-bar bg-green" role="progressbar" aria-valuenow="57" aria-valuemin="0" aria-valuemax="100" style="width: 57%">
+                                      </div>
+                                  </div>
+                                  <small>
+                                      57% Complete
+                                  </small>
+                              </td>
+                              <td class="project-state">
+                                  <span class="badge badge-success">Success</span>
+                              </td>
+                              <td class="project-actions text-right">
+                                  <a class="btn btn-primary btn-sm" href="#">
+                                      <i class="fas fa-folder">
+                                      </i>
+                                      View
+                                  </a>
+                                  <a class="btn btn-info btn-sm" href="#">
+                                      <i class="fas fa-pencil-alt">
+                                      </i>
+                                      Edit
+                                  </a>
+                                  <a class="btn btn-danger btn-sm" href="#">
+                                      <i class="fas fa-trash">
+                                      </i>
+                                      Delete
+                                  </a>
+                              </td>
+                          </tr>
+                          
+                      </tbody>
+                  </table>
+                </div>
+                <!-- /.card-body -->
+              </div>
+              <!-- /.card -->
+        
+            </section>
+            <!-- /.content -->
+          </div>
+          <!-- /.content-wrapper -->
+        
                   </div>
               </div>
           </div>

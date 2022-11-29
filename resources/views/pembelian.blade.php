@@ -6,7 +6,7 @@
     <div class="content-header">
       <div class="container-fluid">
         <div class="row mb-2">
-          <div class="col-sm-6">
+          <div class="col-md-12">
             <h1 class="m-0">Pembelian Produk</h1>
             <div class="container mt-3"> 
               <a href="/input_pembelian" class="btn btn-primary" role="button" data-bs-toggle="button">Input Data Pembelian</a>
@@ -40,15 +40,18 @@
                       </div>
                     </td>
                     <td>
-                      <div class="dropdown">
-                        <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
-                          Detail
+                      <div class="btn-group">
+                        <button type="button" class="btn btn-info">Action</button>
+                        <button type="button" class="btn btn-info dropdown-toggle dropdown-icon" data-toggle="dropdown">
+                          <span class="sr-only">Toggle Dropdown</span>
                         </button>
-                        <ul class="dropdown-menu">
-                          <li><a class="dropdown-item" href="#">Done</a></li>
-                          <li><a class="dropdown-item" href="#">Hapus</a></li>
-                          <li><a class="dropdown-item" href="#">Edit</a></li>
-                        </ul>
+                        <div class="dropdown-menu" role="menu">
+                          <a class="dropdown-item" href="#">Action</a>
+                          <a class="dropdown-item" href="#">Another action</a>
+                          <a class="dropdown-item" href="#">Something else here</a>
+                          <div class="dropdown-divider"></div>
+                          <a class="dropdown-item" href="#">Separated link</a>
+                        </div>
                       </div>
                     </td>
                   </tr>

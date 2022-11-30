@@ -1,14 +1,7 @@
 @extends('layouts.panel')
 @section('title' , 'Jasa Servis')
 @section('content')
- <div class="content-wrapper">
-    <!-- Content Header (Page header) -->
-    <div class="content-header">
-      <div class="container-fluid">
-        <div class="row mb-2">
-          <div class="col-md-12">
-            <h1 class="m-0">Order Jasa Service</h1>
-            <p>
+
 <section class="header-main border-bottom">
 	<div class="container">
 <div class="row align-items-center">

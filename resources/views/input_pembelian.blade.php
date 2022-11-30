@@ -1,13 +1,7 @@
 @extends('layouts.panel')
 @section('title' , 'Input Pembelian')
 @section('content')
- <div class="content-wrapper">
-    <!-- Content Header (Page header) -->
-    <div class="content-header">
-      <div class="container-fluid">
-        <div class="row mb-2">
-          <div class="col-md-12">
-            <h1 class="m-0">Input Pembelian</h1>
+ 
             <div class="row mb-3">
                 <label for="harga beli" class="col-sm-2 col-form-label">ID Barang</label>
                 <div class="col-sm-10">
@@ -83,8 +77,7 @@
     </section>
     <!-- /.content -->
   </div>
-=======
->>>>>>> dd113545025993daf53828109a67fbb160d44711
+
   @endsection
 
 

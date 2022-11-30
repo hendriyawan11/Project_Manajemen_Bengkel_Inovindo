@@ -1,62 +1,74 @@
 @extends('layouts.panel')
 
 @section('content')
- <div class="content-wrapper">
-    <!-- Content Header (Page header) -->
-    <div class="content-header">
-      <div class="container-fluid">
-        <div class="row mb-2">
-          <div class="col-md-12">
-            <h1 class="m-0">Pembelian Produk</h1>
             <div class="container mt-3"> 
               <a href="/input_pembelian" class="btn btn-primary" role="button" data-bs-toggle="button">Input Data Pembelian</a>
               <p>          
-              <table class="table table-bordered">
-                <thead>
-                  <tr>
-                    <th>ID Barang</th>
-                    <th>Nama Barang</th>
-                    <th>Merk</th>
-                    <th>Tgl.Beli</th>
-                    <th>Jumlah Barang</th>
-                    <th>Harga Barang</th>
-                    <th>Deskripsi</th>
-                    <th>Foto</th>
-                    <th>Action</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>123</td>
-                    <td>Oli</td>
-                    <td>Repsol</td>
-                    <td>125-sep-22</td>
-                    <td>10</td>
-                    <td>35.000</td>
-                    <td>150 ml</td>
-                    <td>
-                      <div class="text-center">
-                        <img src="lte/dist/img/user2-160x160.jpg" alt="TBSM">
-                      </div>
-                    </td>
-                    <td>
-                      <div class="btn-group">
-                        <button type="button" class="btn btn-info">Action</button>
-                        <button type="button" class="btn btn-info dropdown-toggle dropdown-icon" data-toggle="dropdown">
-                          <span class="sr-only">Toggle Dropdown</span>
-                        </button>
-                        <div class="dropdown-menu" role="menu">
-                          <a class="dropdown-item" href="#">Action</a>
-                          <a class="dropdown-item" href="#">Another action</a>
-                          <a class="dropdown-item" href="#">Something else here</a>
-                          <div class="dropdown-divider"></div>
-                          <a class="dropdown-item" href="#">Separated link</a>
-                        </div>
-                      </div>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
+                <div class="card">
+                  <!-- /.card-header -->
+                  <div class="card-body">
+                    <table id="example1" class="table table-bordered table-striped">
+                      <thead>
+                      <tr>
+                        <th>ID Barang</th>
+                        <th>Nama Barang</th>
+                        <th>Merk</th>
+                        <th>Tanggal Beli</th>
+                        <th>Jumlah Barang</th>
+                        <th>Harga Barang</th>
+                        <th>Deskripsi</th>
+                        <th>Foto</th>
+                        <th>Action</th>
+                      </tr>
+                      </thead>
+                      <tbody>
+                      <tr>
+                        <td>Trident</td>
+                        <td>Internet</td>
+                        <td>Win 95+</td>
+                        <td> 4</td>
+                        <td>X</td>
+                        <td>Internet</td>
+                        <td>Win 95+</td>
+                        <td> <img src="..." class="rounded mx-auto d-block" alt="...">
+                        </td>
+                        <td><div class="btn-group">
+                          <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                            Action
+                          </button>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Separated link</a></li>
+                          </ul>
+                        </div></td>
+                      </tr>
+                      </tbody>
+                      <tfoot>
+                      <tr>
+                        <th>ID Barang</th>
+                        <th>Nama Barang</th>
+                        <th>Merk</th>
+                        <th>Tanggal Beli</th>
+                        <th>Jumlah Barang</th>
+                        <th>Harga Barang</th>
+                        <th>Deskripsi</th>
+                        <th>Foto</th>
+                        <th>Action</th>
+                      </tr>
+                      </tfoot>
+                    </table>
+                  </div>
+                  <!-- /.card-body -->
+                </div>
+                <!-- /.card -->
+              </div>
+              <!-- /.col -->
+            </div>
+            <!-- /.row -->
+          </div>
             </p>
             </div>
           </div><!-- /.col -->
@@ -90,5 +102,4 @@
   </div>
 =======
 @section('title' , 'Pembelian')
->>>>>>> dd113545025993daf53828109a67fbb160d44711
   @endsection

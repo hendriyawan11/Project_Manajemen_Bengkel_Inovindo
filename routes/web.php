@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\Layout;
 use App\Http\Controllers\Controller;
+use App\Http\Controllers\Konsumen;
 use Illuminate\Support\Facades\Route;
 
 
@@ -40,9 +41,6 @@ Route::get('/mekanik', function() {
 Route::get('/laporan', function() {
     return view ('laporan');
 });
-Route::get('/login', function() {
-    return view ('layouts.login');
-});
 Route::get('/input_servis', function() {
     return view ('input_servis');
 });
@@ -61,5 +59,12 @@ Route::get('/invoice', function() {
 Route::get('/invoice_print', function() {
     return view ('invoice_print');
 });
-
-
+Route::get('/login', function() {
+    return view ('login');
+});
+Route::get('/register', function() {
+    return view ('register');
+});
+Route::get('/konsumen', function() {
+    return view ('konsumen');
+});

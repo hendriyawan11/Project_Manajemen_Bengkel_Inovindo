@@ -1,17 +1,35 @@
-@extends('layouts.panel')
-@section('title' , 'Input Servis')
+@extends('layouts.panel_cust')
+@section('title' , 'Input Pembelian')
 @section('content')
- <div class="content-wrapper">
-    <!-- Content Header (Page header) -->
-    <div class="content-header">
-      <div class="container-fluid">
-        <div class="row mb-2">
-          <div class="col-md-12">
-            <h1 class="m-0">Input Data Service</h1>
+ 
             <div class="row mb-3">
-                <label for="harga beli" class="col-sm-2 col-form-label">Harga Beli</label>
+                <label for="harga beli" class="col-sm-2 col-form-label">ID Barang</label>
                 <div class="col-sm-10">
                     <input type="text" class="form-control" placeholder="Harga Beli">
+                </div>
+              </div>
+              <div class="row mb-3">
+                <label for="merk" class="col-sm-2 col-form-label">Harga Barang</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" placeholder="Merk">
+                </div>
+              </div>
+              <div class="row mb-3">
+                <label for="merk" class="col-sm-2 col-form-label">Tgl.Beli</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" placeholder="Merk">
+                </div>
+              </div>
+              <div class="row mb-3">
+                <label for="merk" class="col-sm-2 col-form-label">Jumlah</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" placeholder="Merk">
+                </div>
+              </div>
+              <div class="row mb-3">
+                <label for="merk" class="col-sm-2 col-form-label">Harga</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" placeholder="Merk">
                 </div>
               </div>
               <div class="row mb-3">
@@ -26,6 +44,7 @@
                     <textarea class="form-control" rows="5" id="comment" name="text"></textarea>
                 </div>
               </div>
+
               <div class="row mb-3">
                 <label for="image" class="col-sm-2 col-form-label">Gambar</label>
               <div class="col-sm-10">

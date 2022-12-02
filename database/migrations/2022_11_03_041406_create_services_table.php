@@ -15,18 +15,13 @@ return new class extends Migration
     {
         Schema::create('services', function (Blueprint $table) {
             $table->id();
-            $table->string('jenis_servis')->require();
-            $table->date('tanggal');
-            $table->string('foto');
+            $table->string('jenis_servis');
+            $table->decimal('harga');
             $table->timestamps();
         });
     }
 
-    /**
-     * Reverse the migrations.
-     *
-     * @return void
-     */
+
     public function down()
     {
         Schema::dropIfExists('services');

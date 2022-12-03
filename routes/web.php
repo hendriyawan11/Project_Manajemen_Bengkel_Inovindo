@@ -65,4 +65,20 @@ Route::get('/login', function() {
 Route::get('/register', function() {
     return view ('register');
 });
-Route::get('/konsumen',[Konsumen::class, 'index']);
+Route::get('/konsumen',[Konsumen::class, 'index'])->name('konsumen.index');
+
+Route::get('/dashboard_cust', function() {
+    return view ('konsumen.dashboard_cust');
+});
+Route::get('/data_jasa', function() {
+    return view ('konsumen.data_jasa');
+});
+Route::get('/data_sparepart', function() {
+    return view ('konsumen.data_sparepart');
+});
+Route::get('/story', function() {
+    return view ('konsumen.story');
+});
+Route::get('/update_profile', function() {
+    return view ('konsumen.update_profile');
+});

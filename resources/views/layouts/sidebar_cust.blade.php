@@ -31,7 +31,7 @@
           <li class="nav-item menu-open">
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="/konsumen/dashboard_cust" class="nav-link">
+                <a href="/dashboard_cust" class="nav-link">
                   <i class="fa-solid fa-house-laptop"></i>
                   <p>Dashboard</p>
                 </a>
@@ -40,7 +40,7 @@
             <li class="nav-item menu-open">
                 <ul class="nav nav-treeview">
                   <li class="nav-item">
-                    <a href="/konsumen/stories" class="nav-link">
+                    <a href="/story" class="nav-link">
                         <i class="fa-solid fa-store"></i>
                       <p>Stories </p>
                     </a>
@@ -49,7 +49,7 @@
                 <li class="nav-item menu-open">
                     <ul class="nav nav-treeview">
                       <li class="nav-item">
-                        <a href="/konsumen/data_jasa" class="nav-link">
+                        <a href="/data_jasa" class="nav-link">
                             <i class="fa-solid fa-layer-group"></i>
                           <p>Data Service</p>
                         </a>
@@ -58,7 +58,7 @@
                     <li class="nav-item menu-open">
                         <ul class="nav nav-treeview">
                           <li class="nav-item">
-                            <a href="/konsumen/data_sparepart" class="nav-link">
+                            <a href="/data_sparepart" class="nav-link">
                                 <i class="fa-solid fa-toolbox"></i>
                               <p>Data Sparepart</p>
                             </a>

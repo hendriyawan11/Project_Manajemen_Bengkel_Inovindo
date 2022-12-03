@@ -1,5 +1,5 @@
 @extends('layouts.panel_cust')
-@section('title' , 'Input Pembelian')
+@section('title' , 'Update Profile')
 @section('content')
  
             <div class="row mb-3">

@@ -1,9 +1,8 @@
 <?php
-
-use App\Http\Controllers\Layout;
-use App\Http\Controllers\Controller;
 use App\Http\Controllers\Konsumen;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ServiceController;
+use App\Http\Controllers\MechanicController;
 
 
 /*
@@ -32,12 +31,8 @@ Route::get('/pembelian', function() {
 Route::get('/semua_sparepart', function() {
     return view ('semua_sparepart');
 });
-Route::get('/servis', function() {
-    return view ('servis');
-});
-Route::get('/mekanik', function() {
-    return view ('mekanik');
-});
+Route::get('/servis',[ServiceController::class, 'servis'])->name('views.servis');
+Route::get('/mekanik',[MechanicController::class, 'mechanic'])->name('views.mekanik');
 Route::get('/laporan', function() {
     return view ('laporan');
 });

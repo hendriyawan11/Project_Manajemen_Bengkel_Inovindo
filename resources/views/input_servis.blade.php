@@ -1,13 +1,6 @@
 @extends('layouts.panel')
 @section('title' , 'Input Servis')
 @section('content')
- <div class="content-wrapper">
-    <!-- Content Header (Page header) -->
-    <div class="content-header">
-      <div class="container-fluid">
-        <div class="row mb-2">
-          <div class="col-md-12">
-            <h1 class="m-0">Input Data Service</h1>
             <div class="row mb-3">
                 <label for="harga beli" class="col-sm-2 col-form-label">Harga Beli</label>
                 <div class="col-sm-10">
@@ -22,8 +15,8 @@
               </div>
               <div class="row mb-3">
                 <label for="deskripsi" class="col-sm-2 col-form-label">Deskripsi</label>
-                <div class="col-sm-10">
-                    <textarea class="form-control" rows="5" id="comment" name="text"></textarea>
+                <div id="editor">
+                    <a> ini text editor </a>
                 </div>
               </div>
               <div class="row mb-3">
@@ -36,29 +29,16 @@
           </div><!-- /.col -->
         </div><!-- /.row -->
       </div><!-- /.container-fluid -->
-    </div>
-    <!-- /.content-header -->
-
-    <!-- Main content -->
-   
-
-              <!-- /.card-header -->
-              <div class="card-body pt-0">
-                <!--The calendar -->
-                <div id="calendar" style="width: 100%"></div>
-              </div>
-              <!-- /.card-body -->
-            </div>
-            <!-- /.card -->
-          </section>
-          <!-- right col -->
-        </div>
-        <!-- /.row (main row) -->
-      </div><!-- /.container-fluid -->
-    </section>
-    <!-- /.content -->
+    </div>  
   </div>
-
+  <script src="https://cdn.ckeditor.com/ckeditor5/35.3.2/classic/ckeditor.js"></script>
+  <script>
+    ClassicEditor
+        .create( document.querySelector( '#editor' ) )
+        .catch( error => {
+            console.error( error );
+        } );
+  </script>
   @endsection
 
 

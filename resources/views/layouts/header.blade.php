@@ -40,7 +40,7 @@
         </div>
       </li>
       <li class="nav-item">
-        <a class="nav-link"href="/login" >
+        <a class="nav-link"href="/logincoba" >
           <i class="fa-solid fa-right-from-bracket"></i>
         </a>
       </li>

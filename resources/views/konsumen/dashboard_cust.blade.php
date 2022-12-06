@@ -13,7 +13,7 @@
               <h3 class="mb-5">Antrian</h3>
   
               <div class="form-outline mb-4">
-                <input class="form-control form-control-lg" type="text" placeholder=".form-control-lg" aria-label=".form-control-lg example">
+                <input class="form-control form-control-lg" type="text" placeholder="Nomor Antrian" readonly>
                 
               </div>
   

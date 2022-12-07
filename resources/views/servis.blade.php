@@ -10,10 +10,11 @@
                 <table id="example1" class="table table-bordered table-striped">
                   <thead>
                   <tr>
-                    <th>NO</th>
+                    <th class="col-1">NO</th>
                     <th>Jenis Servis</th>
+                    <th>Deskiripsi</th>
                     <th>Harga</th>
-                    <th>Action</th>
+                    <th class="col-2">Action</th>
                   </tr>
                   </thead>
                   <tbody>
@@ -21,8 +22,11 @@
                     <tr>
                         <td>{{ $loop->iteration }}</td>
                         <td>{{ $data->jenis_servis }}</td>
+                        <td>{{ $data->deskripsi }}</td>
                         <td>{{ $data->harga }}</td>
-                        <td>{{ $data->action }}</td>
+                        <td><button class="btn btn-primary"><i class="fa-regular fa-pen-to-square"></i></button>{{ $data->action }}
+                        <button class="btn btn-danger"> <i class="fa-regular fa-trash-can"></i></button>{{ $data->action }}</td>
+
                     </tr>
                     @endforeach
                   </tbody>

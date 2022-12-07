@@ -17,8 +17,6 @@ class ServiceController extends Controller
     }
     public function store (Request $request){
         $servis = Service::create($request->all());
-
         return redirect('/servis');
-
 }
 }

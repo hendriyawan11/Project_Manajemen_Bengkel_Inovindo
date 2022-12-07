@@ -1,8 +1,8 @@
 @extends('layouts.panel')
-
+@section('title' , 'Servis')
 @section('content')
             <p>
-            <a href="/input_servis" class="btn btn-primary" role="button" data-bs-toggle="button">Input Data Service</a>
+            <a href="/input-servis" class="btn btn-primary" role="button" data-bs-toggle="button">Input Data Service</a>
             </p>
             <div class="card">
               <!-- /.card-header -->
@@ -56,5 +56,5 @@
     </section>
     <!-- /.content -->
   </div>
-@section('title' , 'Servis')
+
   @endsection

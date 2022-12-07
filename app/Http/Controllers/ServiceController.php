@@ -11,4 +11,14 @@ class ServiceController extends Controller
         $servis = Service::all();
         return view('servis',['itemList' => $servis]);
 }
+    public function create(){
+    $servis = Service::select('id', 'jenis_servis')->get();
+    return view ('input-servis',['servis'=>$servis]);
+    }
+    public function store (Request $request){
+        $servis = Service::create($request->all());
+
+        return redirect('/servis');
+
+}
 }

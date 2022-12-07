@@ -32,12 +32,13 @@ Route::get('/semua_sparepart', function() {
     return view ('semua_sparepart');
 });
 Route::get('/servis',[ServiceController::class, 'servis'])->name('views.servis');
+Route::get('/input-servis',[ServiceController::class, 'create']);
+Route::post('/servis',[ServiceController::class, 'store']);
+
+
 Route::get('/mekanik',[MechanicController::class, 'mechanic'])->name('views.mekanik');
 Route::get('/laporan', function() {
     return view ('laporan');
-});
-Route::get('/input_servis', function() {
-    return view ('input_servis');
 });
 Route::get('/input_mekanik', function() {
     return view ('input_mekanik');

@@ -101,7 +101,7 @@
             </a>
             </li>
             <li class="nav-item">
-            <a href="/laporan" class="nav-link">
+            <a href="/report" class="nav-link">
              <i class="fa-solid fa-book-bookmark"></i>
               <p>
                 Laporan

@@ -11,10 +11,9 @@
                                 <input type="text" class="form-control" name="merk" id="pembelian" placeholder="Masukkan Merk">
                               </div>
                               <div class="form-group">
-                                <label for="deskripsi">Deskripsi</label>
-                                <input type="text" class="form-control" name="deskripsi"  id="editor" placeholder="Masukkan Deskripsi">
-                              </div>
-                              <div class="form-group">
+                                <label for="">Deskripsi</label>
+                                          <textarea name="deskripsi" id="mySummernote"></textarea>
+                              </div>                              <div class="form-group">
                                 <label for="harga">Harga</label>
                                 <input type="text" class="form-control" name="harga" id="harga" placeholder=" Masukkan Harga">
                               </div>
@@ -41,14 +40,6 @@
     </div>
     <!-- /.content-header -->
     </section>
-    <script src="https://cdn.ckeditor.com/ckeditor5/35.3.2/classic/ckeditor.js"></script>
-              <script>
-                ClassicEditor
-                    .create( document.querySelector( '#editor' ) )
-                    .catch( error => {
-                        console.error( error );
-                    } );
-            </script>
   </div>
 
   @endsection

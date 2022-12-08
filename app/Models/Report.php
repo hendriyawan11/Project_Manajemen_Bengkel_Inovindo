@@ -5,14 +5,15 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Mechanic extends Model
+class Report extends Model
 {
     use HasFactory;
 
     protected $fillable =   [
-        'nama_mekanik',
-        'level',
-        'jenis_kelamin'
+        'tanggal',
+        'jenis_transaksi',
+        'total',
+        'keterangan'
 
     ];
 }

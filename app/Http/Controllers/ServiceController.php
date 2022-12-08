@@ -1,7 +1,6 @@
 <?php
 
 namespace App\Http\Controllers;
-
 use App\Models\Service;
 use Illuminate\Http\Request;
 
@@ -18,5 +17,14 @@ class ServiceController extends Controller
     public function store (Request $request){
         $servis = Service::create($request->all());
         return redirect('/servis');
+}
+    public function edit (Request $request, $id){
+        $servis = Service::findOrFail($id);
+        return view('layouts.servis-edit',['servis'=>$servis]);
+}
+    public function update (Request $request, $id){
+  $servis = Service::findOrFail($id);
+  $servis -> update($request->all());
+  return redirect('/servis');
 }
 }

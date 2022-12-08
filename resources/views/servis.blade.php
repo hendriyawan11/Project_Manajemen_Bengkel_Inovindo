@@ -24,9 +24,8 @@
                         <td>{{ $data->jenis_servis }}</td>
                         <td>{{ $data->deskripsi }}</td>
                         <td>{{ $data->harga }}</td>
-                        <td><button class="btn btn-primary"><i class="fa-regular fa-pen-to-square"></i></button>{{ $data->action }}
-                        <button class="btn btn-danger"> <i class="fa-regular fa-trash-can"></i></button>{{ $data->action }}</td>
-
+                        <td><a href="servis-edit/{{ $data->id }}"><button type="button" class="btn btn-info"><i class="fa-regular fa-pen-to-square"></i></button>{{ $data->action }}</a>
+                        <button type="button" class="btn btn-danger"> <i class="fa-regular fa-trash-can"></i></button>{{ $data->action }}</td>
                     </tr>
                     @endforeach
                   </tbody>

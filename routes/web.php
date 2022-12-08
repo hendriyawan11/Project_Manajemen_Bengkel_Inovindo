@@ -34,6 +34,8 @@ Route::get('/semua_sparepart', function() {
 Route::get('/servis',[ServiceController::class, 'servis'])->name('views.servis');
 Route::get('/input-servis',[ServiceController::class, 'create']);
 Route::post('/servis',[ServiceController::class, 'store']);
+Route::get('/servis-edit/{id}',[ServiceController::class, 'edit']);
+Route::put('/servis/{id}',[ServiceController::class, 'update']);
 
 
 Route::get('/mekanik',[MechanicController::class, 'mechanic'])->name('views.mekanik');

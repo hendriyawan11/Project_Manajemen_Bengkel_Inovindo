@@ -7,7 +7,7 @@
                 <div class="card-body">
                   <div class="form-group">
                     <label for="servis">Jenis Servis</label>
-                    <input type="text" class="form-control" name="jenis_servis" id="servis" placeholder="Masukkan Jenis Servis">
+                    <input type="text" class="form-control" name="jenis_servis"id="servis" placeholder="Masukkan Jenis Servis" required>
                   </div>
                   <div class="form-group">
                     <label for="deskripsi">Deskripsi</label>
@@ -15,7 +15,7 @@
                   </div>
                   <div class="form-group">
                     <label for="harga">Harga</label>
-                    <input type="text" class="form-control" name="harga" id="harga" placeholder=" Masukkan Harga">
+                    <input type="text" class="form-control" name="harga" id="harga" placeholder=" Masukkan Harga" required>
                   </div>
                   <button type="submit" class="btn btn-success">Save</button>
                 </div>

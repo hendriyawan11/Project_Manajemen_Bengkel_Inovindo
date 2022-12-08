@@ -62,8 +62,8 @@ Route::get('/input_servis', function() {
     return view ('input_servis');
 });
 
-Route::get('/input_pembelian', function() {
-    return view ('input_pembelian');
+Route::get('/input-pembelian', function() {
+    return view ('input-pembelian');
 });
 Route::get('/checkout', function() {
     return view ('checkout');

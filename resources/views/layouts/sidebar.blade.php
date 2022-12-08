@@ -31,14 +31,14 @@
           <li class="nav-item menu-open">
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="/dashboard" class="nav-link {{ ($title === "Dashboard")  ? 'active' : ''}}">
+                <a href="/dashboard" class="nav-link">
                   <i class="fa-solid fa-house-laptop"></i>
                   <p>Dashboard</p>
                 </a>
               </li>
             </ul>
             <li class="nav-item">
-            <a href="#" class="nav-link {{ ($title === "Transaksi")  ? 'active' : ''}}">
+            <a href="#" class="nav-link">
                <i class="fa-solid fa-handshake"></i>
               <p>
                 Transaksi
@@ -47,13 +47,13 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="/order_sparepart" class="nav-link  {{ ($title === "Order Sparepart")  ? 'active' : ''}}">
+                <a href="/order_sparepart" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Order Spareparts</p>
                 </a>
               </li>
               <li class="nav-item ">
-                <a href="/order_jasa" class="nav-link {{ ($title === "Order Jasa Service")  ? 'active' : ''}}">
+                <a href="/jasa-servis" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Order Jasa Service</p>
                 </a>
@@ -62,7 +62,7 @@
             </li>
 
             <li class="nav-item">
-              <a href="#" class="nav-link {{ ($title === "Sparepart")  ? 'active' : ''}}">
+              <a href="#" class="nav-link">
                  <i class="fa-solid fa-gear"></i>
                 <p>
                   Spareparts
@@ -71,13 +71,13 @@
               </a>
               <ul class="nav nav-treeview">
                 <li class="nav-item">
-                  <a href="/pembelian" class="nav-link {{ ($title === "Pembelian")  ? 'active' : ''}}">
+                  <a href="/pembelian" class="nav-link">
                     <i class="far fa-circle nav-icon"></i>
                     <p>Pembelian</p>
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a href="/semua_sparepart" class="nav-link {{ ($title === "Semua Sparepart")  ? 'active' : ''}}">
+                  <a href="/semua_sparepart" class="nav-link">
                     <i class="far fa-circle nav-icon"></i>
                     <p>Semua Spareparts</p>
                   </a>
@@ -85,7 +85,7 @@
               </ul>
               </li>
             <li class="nav-item">
-            <a href="/servis" class="nav-link {{ ($title === "Service")  ? 'active' : ''}}">
+            <a href="/servis" class="nav-link ">
             <i class="fa-solid fa-screwdriver-wrench"></i>
               <p>
                 Service
@@ -93,7 +93,7 @@
             </a>
             </li>
             <li class="nav-item">
-            <a href="/mekanik" class="nav-link {{ ($title === "Mekanik")  ? 'active' : ''}}">
+            <a href="/mekanik" class="nav-link">
               <i class="fa-solid fa-user-gear"></i>
               <p>
                Mekanik
@@ -101,7 +101,7 @@
             </a>
             </li>
             <li class="nav-item">
-            <a href="/laporan" class="nav-link {{ ($title === "Data Laporan")  ? 'active' : ''}}">
+            <a href="/laporan" class="nav-link">
              <i class="fa-solid fa-book-bookmark"></i>
               <p>
                 Laporan

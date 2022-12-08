@@ -2,7 +2,7 @@
 @section('title' , 'Mekanik')
 @section('content')
             <p>
-            <a href="/input_mekanik" class="btn btn-primary" role="button" data-bs-toggle="button">Tambah Data Mekanik</a>
+            <a href="/input-mekanik" class="btn btn-primary" role="button" data-bs-toggle="button">Tambah Data Mekanik</a>
             </p>
             <div class="card">
               <!-- /.card-header -->

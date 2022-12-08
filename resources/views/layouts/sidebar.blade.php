@@ -31,7 +31,7 @@
           <li class="nav-item menu-open">
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="/" class="nav-link">
+                <a href="/dashboard" class="nav-link">
                   <i class="fa-solid fa-house-laptop"></i>
                   <p>Dashboard</p>
                 </a>
@@ -52,8 +52,8 @@
                   <p>Order Spareparts</p>
                 </a>
               </li>
-              <li class="nav-item">
-                <a href="/order_jasa" class="nav-link">
+              <li class="nav-item ">
+                <a href="/jasa-servis" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Order Jasa Service</p>
                 </a>
@@ -85,7 +85,7 @@
               </ul>
               </li>
             <li class="nav-item">
-            <a href="/servis" class="nav-link">
+            <a href="/servis" class="nav-link ">
             <i class="fa-solid fa-screwdriver-wrench"></i>
               <p>
                 Service

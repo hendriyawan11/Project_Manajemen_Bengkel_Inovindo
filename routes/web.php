@@ -1,6 +1,13 @@
 <?php
+
+use GuzzleHttp\Middleware;
+use App\Http\Controllers\Layout;
 use App\Http\Controllers\Konsumen;
+use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\AuthController;
+use App\Http\Controllers\UserController;
+use SebastianBergmann\CodeCoverage\Report\Html\Dashboard;
 use App\Http\Controllers\ServiceController;
 use App\Http\Controllers\MechanicController;
 
@@ -16,14 +23,16 @@ use App\Http\Controllers\MechanicController;
 |
 */
 
-Route::get('/', function() {
-    return view ('dashboard');
-});
+Route::get('/dashboard', function() {
+    return view ('user.dashboard');
+})->name('user.dashboard');
+
+
 Route::get('/order_sparepart', function() {
     return view ('order_sparepart');
 });
-Route::get('/order_jasa', function() {
-    return view ('jasa_servis');
+Route::get('/jasa-servis', function() {
+    return view ('jasa-servis');
 });
 Route::get('/pembelian', function() {
     return view ('pembelian');
@@ -31,6 +40,10 @@ Route::get('/pembelian', function() {
 Route::get('/semua_sparepart', function() {
     return view ('semua_sparepart');
 });
+Route::get('/mekanik', function() {
+    return view ('mekanik');
+});
+
 Route::get('/servis',[ServiceController::class, 'servis'])->name('views.servis');
 Route::get('/input-servis',[ServiceController::class, 'create']);
 Route::post('/servis',[ServiceController::class, 'store']);
@@ -39,12 +52,18 @@ Route::put('/servis/{id}',[ServiceController::class, 'update']);
 
 
 Route::get('/mekanik',[MechanicController::class, 'mechanic'])->name('views.mekanik');
+Route::get('/input-mekanik',[MechanicController::class, 'create']);
+Route::post('/mekanik',[MechanicController::class, 'store']);
+
+
+
 Route::get('/laporan', function() {
     return view ('laporan');
 });
-Route::get('/input_mekanik', function() {
-    return view ('input_mekanik');
+Route::get('/input_servis', function() {
+    return view ('input_servis');
 });
+
 Route::get('/input_pembelian', function() {
     return view ('input_pembelian');
 });
@@ -57,12 +76,15 @@ Route::get('/invoice', function() {
 Route::get('/invoice_print', function() {
     return view ('invoice_print');
 });
-Route::get('/login', function() {
-    return view ('login');
-});
-Route::get('/register', function() {
-    return view ('register');
-});
+
+Route::get('/logincoba', [AuthController::class, 'proseslogin'])->name('login');
+Route::post('/login', [AuthController::class, 'authentication'])->name('loginauth');
+
+// Route::get('/register', function() {
+//     return view ('register',[
+//         "title" => "Register"
+//     ]);
+// });
 Route::get('/konsumen',[Konsumen::class, 'index'])->name('konsumen.index');
 
 Route::get('/dashboard_cust', function() {

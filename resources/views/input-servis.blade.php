@@ -11,7 +11,7 @@
                   </div>
                   <div class="form-group">
                     <label for="deskripsi">Deskripsi</label>
-                    <input type="text" class="form-control" name="deskripsi" id="deskripsi" placeholder="Masukkan Deskripsi">
+                    <input type="text" class="form-control" name="deskripsi"  id="editor" placeholder="Masukkan Deskripsi">
                   </div>
                   <div class="form-group">
                     <label for="harga">Harga</label>
@@ -20,7 +20,16 @@
                   <button type="submit" class="btn btn-success">Save</button>
                 </div>
               </form>
-</div>
+              <script src="https://cdn.ckeditor.com/ckeditor5/35.3.2/classic/ckeditor.js"></script>
+              <script>
+                ClassicEditor
+                    .create( document.querySelector( '#editor' ) )
+                    .catch( error => {
+                        console.error( error );
+                    } );
+            </script>
+            
+            </div>
   @endsection
 
 

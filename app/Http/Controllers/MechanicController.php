@@ -11,4 +11,13 @@ class MechanicController extends Controller
         $mekanik = Mechanic::all();
         return view('mekanik',['itemList' => $mekanik]);
 }
+
+public function create(){
+        $mekanik = Mechanic::select('id', 'nama')->get();
+        return view ('input-mekanik',['mekanik'=>$mekanik]);
+        }
+        public function store (Request $request){
+            $servis = Mechanic::create($request->all());
+            return redirect('/mekanik');
+    }
 }

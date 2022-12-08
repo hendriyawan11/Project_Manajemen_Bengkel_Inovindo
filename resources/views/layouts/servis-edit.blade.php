@@ -13,7 +13,7 @@
                   </div>
                   <div class="form-group">
                     <label for="deskripsi">Deskripsi</label>
-                    <input type="text" class="form-control" name="deskripsi" id="deskripsi" placeholder="Masukkan Deskripsi" value="{{ $servis->deskripsi }}">
+                     <textarea name="deskripsi" id="mySummernote">{{ $servis->deskripsi }}</textarea>
                   </div>
                   <div class="form-group">
                     <label for="harga">Harga</label>

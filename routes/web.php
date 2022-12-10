@@ -34,14 +34,8 @@ Route::get('/order_sparepart', function() {
 Route::get('/jasa-servis', function() {
     return view ('jasa-servis');
 });
-Route::get('/pembelian', function() {
-    return view ('pembelian');
-});
 Route::get('/semua_sparepart', function() {
     return view ('semua_sparepart');
-});
-Route::get('/mekanik', function() {
-    return view ('mekanik');
 });
 
 Route::get('/servis',[ServiceController::class, 'servis'])->name('views.servis');
@@ -52,22 +46,27 @@ Route::put('/servis/{id}',[ServiceController::class, 'update']);
 Route::delete('servis/destroy/{id}', [ServiceController::class, 'destroy'])->name('servis.destroy');
 
 
+Route::get('/pembelian',[ShopsController::class, 'pembelian'])->name('views.pembelian');
+Route::get('/input-pembelian',[ShopsController::class, 'create']);
+Route::post('/pembelian',[ShopsController::class, 'store']);
+Route::get('/pembelian-edit/{id}',[ShopsController::class, 'edit']);
+Route::put('/pembelian/{id}',[ShopsController::class, 'update']);
+Route::delete('pembelian/destroy/{id}', [ShopsController::class, 'destroy'])->name('pembelian.destroy');
+
+
 Route::get('/mekanik',[MechanicController::class, 'mechanic'])->name('views.mekanik');
 Route::get('/input-mekanik',[MechanicController::class, 'create']);
 Route::post('/mekanik',[MechanicController::class, 'store']);
 
+Route::get('/report',[ReportController::class, 'laporan'])->name('views.report');
+Route::post('/report',[ReportController::class, 'store']);
+Route::put('/report/{id}',[ReportController::class, 'update']);
+Route::delete('report/destroy/{id}', [ReportController::class, 'destroy'])->name('report.destroy');
 
-
-Route::get('/laporan', function() {
-    return view ('laporan');
-});
 Route::get('/input_servis', function() {
     return view ('input_servis');
 });
 
-Route::get('/input-pembelian', function() {
-    return view ('input-pembelian');
-});
 Route::get('/checkout', function() {
     return view ('checkout');
 });

@@ -1,9 +1,15 @@
 @extends('layouts.panel')
 @section('title' , 'Servis')
 @section('content')
-            <p>
-            <a href="/input-servis" class="btn btn-primary" role="button" data-bs-toggle="button">Input Data Service</a>
-            </p>
+            <div class="my-3">
+            <a href="/input-servis" class="btn btn-primary" role="button" data-bs-toggle="button"> + Tambah Jenis Servis</a>
+            </div>
+
+            @if (Session::has('status'))
+                <div class="alert alert-success col-4" role="alert">
+                   <i class="fa-solid fa-check"></i> {{ Session::get('message') }}
+                    </div>
+              @endif
             <div class="card">
               <!-- /.card-header -->
               <div class="card-body">
@@ -20,12 +26,18 @@
                   <tbody>
                     @foreach ($itemList as $data )
                     <tr>
+                        <input type="hidden" class="delete_id" value="{{ $data->id }}">
                         <td>{{ $loop->iteration }}</td>
                         <td>{{ $data->jenis_servis }}</td>
                         <td>{!! $data->deskripsi !!}</td>
                         <td>{{ $data->harga }}</td>
-                        <td><a href="servis-edit/{{ $data->id }}"><button type="button" class="btn btn-info"><i class="fa-regular fa-pen-to-square"></i></button>{{ $data->action }}</a>
-                        <button type="button" class="btn btn-danger"> <i class="fa-regular fa-trash-can"></i></button>{{ $data->action }}</td>
+                        <form action="{{ route('servis.destroy', $data->id) }}" method="POST">
+                            <td><a href="servis-edit/{{ $data->id }}"><button type="button" class="btn btn-info"><i class="fa-regular fa-pen-to-square"></i> Edit</button>{{ $data->action }}</a>
+                        @csrf
+                        @method('delete')
+                        <button  class="btn btn-danger btndelete"><i class="fa-regular fa-trash-can"></i> Delete </button>
+                    </form>
+                    </td>
                     </tr>
                     @endforeach
                   </tbody>

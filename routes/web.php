@@ -49,6 +49,7 @@ Route::get('/input-servis',[ServiceController::class, 'create']);
 Route::post('/servis',[ServiceController::class, 'store']);
 Route::get('/servis-edit/{id}',[ServiceController::class, 'edit']);
 Route::put('/servis/{id}',[ServiceController::class, 'update']);
+Route::delete('servis/destroy/{id}', [ServiceController::class, 'destroy'])->name('servis.destroy');
 
 
 Route::get('/mekanik',[MechanicController::class, 'mechanic'])->name('views.mekanik');

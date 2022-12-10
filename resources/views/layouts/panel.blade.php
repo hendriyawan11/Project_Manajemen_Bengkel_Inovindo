@@ -62,6 +62,9 @@
 
 <!-- jQuery -->
 <script src="{{ asset ('lte/plugins/jquery/jquery.min.js')}}"></script>
+
+
+{{-- jquery akhir --}}
 <!-- jQuery UI 1.11.4 -->
 <script src="{{ asset ('lte/plugins/jquery-ui/jquery-ui.min.js')}}"></script>
 <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
@@ -100,5 +103,55 @@
 <script src="{{ asset ('rlte/dist/js/demo.js')}}"></script>
 <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
 <script src="{{ asset ('lte/dist/js/pages/dashboard.js')}}"></script>
+{{-- sweet alert --}}
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script>
+    $(document).ready(function () {
+
+        $.ajaxSetup({
+            headers: {
+                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+            }
+        });
+
+        $('.btndelete').click(function (e) {
+            e.preventDefault();
+
+            var deleteid = $(this).closest("tr").find('.delete_id').val();
+
+            swal({
+                    title: "Apakah anda yakin?",
+                    text: "Setelah dihapus, Anda tidak dapat memulihkan kolom ini lagi!",
+                    icon: "warning",
+                    buttons: true,
+                    dangerMode: true,
+                })
+                .then((willDelete) => {
+                    if (willDelete) {
+                        var data = {
+                            "_token": $('input[name=_token]').val(),
+                            'id': deleteid,
+                        };
+                        $.ajax({
+                            type: "DELETE",
+                            url: 'servis/destroy/' + deleteid,
+                            data: data,
+                            success: function (response) {
+                                swal(response.status, {
+                                        icon: "success",
+                                    })
+                                    .then((result) => {
+                                        location.reload();
+                                    });
+                            }
+                        });
+                    }
+                });
+        });
+
+    });
+
+</script>
+{{-- end sweet alert --}}
 </body>
 </html>

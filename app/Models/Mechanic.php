@@ -9,10 +9,11 @@ class Mechanic extends Model
 {
     use HasFactory;
 
-    protected $fillable =   [
-        'nama_mekanik',
-        'level',
-        'jenis_kelamin'
+   
+     protected $fillable =   [
+        'nama',
+        'jenis_kelamin',
+        'level'
 
     ];
 }

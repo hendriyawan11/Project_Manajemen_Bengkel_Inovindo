@@ -3,12 +3,12 @@
 @section('content')
 
 <div class="col-6 ">
-        <form action="/pembelian/{{ $shops->id }}" method="POST">
+        <form action="/pembelian/{{ $pembelian->id }}" method="POST">
             @method('PUT')
             @csrf
                 <div class="card-body">
                   <div class="form-group">
-                    <label for="shops">Merk</label>
+                    <label for="merk">Merk</label>
                     <input type="text" class="form-control" name="merk" id="shops" placeholder="Masukkan Merk"  value="{{ $shops->merk }}" required>
                   </div>
                   <div class="form-group">

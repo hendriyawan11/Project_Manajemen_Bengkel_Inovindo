@@ -16,11 +16,10 @@ return new class extends Migration
         Schema::create('shops', function (Blueprint $table) {
             $table->id();
             $table->string('merk');
-            $table->longText('deskripsi');
-            $table->decimal('harga');
-            $table->string('qty');
-            $table->string('foto');
-            $table->string('action');
+            $table->longText('deskripsi')->nullable();
+            $table->decimal('harga')->nullable();
+            $table->string('jumlah')->nullable();
+            $table->string('foto')->nullable();
             $table->timestamps();
         });
     }

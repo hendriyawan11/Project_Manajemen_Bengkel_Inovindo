@@ -25,22 +25,12 @@
                                 <label for="foto">Foto</label>
                                 <input type="file" class="form-control" name="foto" id="foto" aria-describedby="inputGroupFileAddon04" aria-label="Upload" placeholder=" Masukkan Foto">
                               </div>
+                              <button type="submit" class="btn btn-success">Save</button>
                             </div>
-                          </form>
-              {{-- <div class="row mb-3">
-                <label for="image" class="col-sm-2 col-form-label">Gambar</label>
-              <div class="col-sm-10">
-                <input type="file" class="form-control" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
-              </div>
-              </div> --}}
-              <button type="submit" class="btn btn-primary">Save</button>
-          </div><!-- /.col -->
-        </div><!-- /.row -->
-      </div><!-- /.container-fluid -->
-    </div>
-    <!-- /.content-header -->
-    </section>
-  </div>
+                          </div>
+                         
+            
+       
 
   @endsection
 

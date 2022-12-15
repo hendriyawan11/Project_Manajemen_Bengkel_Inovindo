@@ -7,9 +7,10 @@ use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\UserController;
-use SebastianBergmann\CodeCoverage\Report\Html\Dashboard;
+use App\Http\Controllers\ShopsController;
 use App\Http\Controllers\ServiceController;
 use App\Http\Controllers\MechanicController;
+use SebastianBergmann\CodeCoverage\Report\Html\Dashboard;
 
 
 /*
@@ -34,8 +35,8 @@ Route::get('/order_sparepart', function() {
 Route::get('/jasa-servis', function() {
     return view ('jasa-servis');
 });
-Route::get('/semua_sparepart', function() {
-    return view ('semua_sparepart');
+Route::get('/semua-sparepart', function() {
+    return view ('semua-sparepart');
 });
 
 Route::get('/servis',[ServiceController::class, 'servis'])->name('views.servis');
@@ -45,6 +46,14 @@ Route::get('/servis-edit/{id}',[ServiceController::class, 'edit']);
 Route::put('/servis/{id}',[ServiceController::class, 'update']);
 Route::delete('servis/destroy/{id}', [ServiceController::class, 'destroy'])->name('servis.destroy');
 
+Route::get('/mekanik',[MechanicController::class, 'mekanik'])->name('views.mekanik');
+Route::get('/input-mekanik',[MechanicController::class, 'create']);
+Route::post('/mekanik',[MechanicController::class, 'store']);
+Route::get('/mekanik-edit/{id}',[MechanicController::class, 'edit']);
+Route::put('/mekanik/{id}',[MechanicController::class, 'update']);
+Route::delete('mekanik/destroy/{id}', [MechanicController::class, 'destroy'])->name('mekanik.destroy');
+
+
 
 Route::get('/pembelian',[ShopsController::class, 'pembelian'])->name('views.pembelian');
 Route::get('/input-pembelian',[ShopsController::class, 'create']);
@@ -53,10 +62,6 @@ Route::get('/pembelian-edit/{id}',[ShopsController::class, 'edit']);
 Route::put('/pembelian/{id}',[ShopsController::class, 'update']);
 Route::delete('pembelian/destroy/{id}', [ShopsController::class, 'destroy'])->name('pembelian.destroy');
 
-
-Route::get('/mekanik',[MechanicController::class, 'mechanic'])->name('views.mekanik');
-Route::get('/input-mekanik',[MechanicController::class, 'create']);
-Route::post('/mekanik',[MechanicController::class, 'store']);
 
 Route::get('/report',[ReportController::class, 'laporan'])->name('views.report');
 Route::post('/report',[ReportController::class, 'store']);

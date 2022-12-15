@@ -10,7 +10,7 @@
                     <input type="text" class="form-control" name="jenis_servis"id="servis" placeholder="Masukkan Jenis Servis" required>
                   </div>
                   <div class="form-group">
-                    <label for="">Deskripsi</label>
+                    <label for="deskripsi">Deskripsi</label>
                               <textarea name="deskripsi" id="mySummernote"></textarea>
                   </div>
                   <div class="form-group">

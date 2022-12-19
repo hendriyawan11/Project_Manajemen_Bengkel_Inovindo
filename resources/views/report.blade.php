@@ -13,6 +13,11 @@
                 </div>
             </form>
         </div>
+        @if (Session::has('status'))
+                <div class="alert alert-success col-4" role="alert">
+                   <i class="fa-solid fa-check"></i> {{ Session::get('message') }}
+                    </div>
+              @endif
         <div class="card-body">
             <table id="example1" class="table table-bordered table-striped">
               <thead>
@@ -32,8 +37,13 @@
                     <td>{{ $data->jenis_transaksi }}</td>
                     <td>{{ $data->total }}</td>
                     <td>{{ $data->keterangan }}</td>
-                    <td><a href="/{{ $data->id }}"><button type="button" class="btn btn-info"><i class="fa-regular fa-pen-to-square"></i></button>{{ $data->action }}</a>
-                    <button type="button" class="btn btn-danger"> <i class="fa-regular fa-trash-can"></i></button>{{ $data->action }}</td>
+                    <form action="{{ route('report.destroy', $data->id) }}" method="POST">
+                        <td><a href="invoice/{{ $data->id }}"><button type="button" class="btn btn-info"><i class="fa-regular fa-pen-to-square"></i> Edit</button>{{ $data->action }}</a>
+                    @csrf
+                    @method('delete')
+                    <button  class="btn btn-danger btndelete"><i class="fa-regular fa-trash-can"></i> Delete </button>
+                </form>
+                </td>
                 </tr>
                 @endforeach
               </tbody>

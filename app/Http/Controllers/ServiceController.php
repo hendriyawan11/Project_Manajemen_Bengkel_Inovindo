@@ -42,6 +42,6 @@ public function destroy($id)
     {
         $servis = Service::find($id);
         $servis->delete();
-        return response()->json(['status' => 'Serivis Berhasil di hapus!']);
+        return response()->json(['status' => 'Servis Berhasil di hapus!']);
     }
 }

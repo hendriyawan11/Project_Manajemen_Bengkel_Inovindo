@@ -16,8 +16,8 @@ return new class extends Migration
         Schema::create('mechanics', function (Blueprint $table) {
             $table->id();
             $table->string('nama');
-            $table->string('level');
-            $table->string('jenis_kelamin');
+            $table->string('jenis_kelamin')->nullable();
+            $table->string('level')->nullable();
             $table->timestamps();
         });
     }

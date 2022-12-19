@@ -15,12 +15,13 @@ return new class extends Migration
     {
         Schema::create('shops', function (Blueprint $table) {
             $table->id();
+            $table->string('nama');
             $table->string('merk');
             $table->longText('deskripsi');
             $table->decimal('harga');
-            $table->string('qty');
-            $table->string('foto');
-            $table->string('action');
+            $table->string('jumlah');
+            $table->date('tanggal');
+            $table->string('foto')->nullable();
             $table->timestamps();
         });
     }

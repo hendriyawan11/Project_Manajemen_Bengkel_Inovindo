@@ -11,10 +11,12 @@ class Shops extends Model
 
     protected $table= 'shops';
     protected $fillable =   [
+        'nama',
         'merk',
         'deskripsi',
         'harga',
         'jumlah',
+        'tanggal',
         'foto'
 
 

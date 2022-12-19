@@ -7,9 +7,10 @@ use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\UserController;
-use SebastianBergmann\CodeCoverage\Report\Html\Dashboard;
+use App\Http\Controllers\ShopsController;
 use App\Http\Controllers\ServiceController;
 use App\Http\Controllers\MechanicController;
+use SebastianBergmann\CodeCoverage\Report\Html\Dashboard;
 
 
 /*
@@ -31,18 +32,20 @@ Route::get('/dashboard', function() {
 Route::get('/order_sparepart', function() {
     return view ('order_sparepart');
 });
-Route::get('/jasa-servis', function() {
-    return view ('jasa-servis');
-});
-Route::get('/pembelian', function() {
-    return view ('pembelian');
-});
 Route::get('/semua_sparepart', function() {
     return view ('semua_sparepart');
 });
 Route::get('/mekanik', function() {
     return view ('mekanik');
 });
+Route::get('/jasa-servis', function() {
+    return view ('jasa-servis');
+});
+Route::get('/pembelian',[ShopsController::class, 'shops'])->name('views.pembelian');
+Route::get('/input-pembelian',[ShopController::class, 'create']);
+Route::post('/pembelian',[ShopsController::class, 'store']);
+
+
 
 Route::get('/servis',[ServiceController::class, 'servis'])->name('views.servis');
 Route::get('/input-servis',[ServiceController::class, 'create']);

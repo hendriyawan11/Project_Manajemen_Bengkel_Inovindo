@@ -1,5 +1,6 @@
 @extends('layouts.panel')
 @section('title' , 'Pembelian')
+@section('title' , 'Pembelian Spareparts')
 @section('content')
 
 <div class="my-3">
@@ -18,22 +19,26 @@
                   <thead>
                   <tr>
                     <th class="col-1">NO</th>
+                    <th>Nama Barang</th>
                     <th>Merk</th>
                     <th>Deskiripsi</th>
                     <th>Harga</th>
                     <th>Jumlah</th>
-                    <th>Foto</th>                    
-                    <th class="col-2">Action</th>
+                    <th>Tanggal</th>
+                    <th>Foto</th>
+                    <th>Action</th>
                   </tr>
                   </thead>
                   <tbody>
                     @foreach ($itemList as $data )
                     <tr>
                         <td>{{ $loop->iteration }}</td>
+                        <td>{{ $data->nama }}</td>
                         <td>{{ $data->merk }}</td>
                         <td>{!! $data->deskripsi !!}</td>
                         <td>{{ $data->harga }}</td>
                         <td>{{ $data->jumlah }}</td>
+                        <td>{{ $data->tanggal }}</td>
                         <td>{{ $data->foto }}</td>
                         <form action="{{ route('pembelian.destroy', $data->id) }}" method="POST">
                           <td><a href="pembelian-edit/{{ $data->id }}"><button type="button" class="btn btn-info"><i class="fa-regular fa-pen-to-square"></i> Edit</button>{{ $data->action }}</a>

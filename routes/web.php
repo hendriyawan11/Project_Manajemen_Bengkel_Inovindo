@@ -34,9 +34,17 @@ Route::get('/dashboard', function() {
 Route::get('/order_sparepart', function() {
     return view ('order_sparepart');
 });
+
+Route::get('/semua_sparepart', function() {
+    return view ('semua_sparepart');
+});
+Route::get('/mekanik', function() {
+    return view ('mekanik');
+});
 Route::get('/jasa-servis', function() {
     return view ('jasa-servis');
 });
+
 
 Route::get('/semua-sparepart',[SparepartController::class, 'sparepart'])->name('views.sparepart');
 Route::post('/semua-sparepart',[SparepartController::class, 'store']);
@@ -45,6 +53,15 @@ Route::delete('sparepart/destroy/{id}', [SparepartController::class, 'destroy'])
 
 Route::get('/logincoba', [AuthController::class, 'proseslogin'])->name('login');
 Route::post('/login', [AuthController::class, 'authentication'])->name('loginauth');
+
+Route::get('/jasa-servis', function() {
+    return view ('jasa-servis');
+});
+Route::get('/pembelian',[ShopsController::class, 'shops'])->name('views.pembelian');
+Route::get('/input-pembelian',[ShopController::class, 'create']);
+Route::post('/pembelian',[ShopsController::class, 'store']);
+
+
 
 Route::get('/servis',[ServiceController::class, 'servis'])->name('views.servis');
 Route::get('/input-servis',[ServiceController::class, 'create']);

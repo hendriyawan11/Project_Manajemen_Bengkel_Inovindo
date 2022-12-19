@@ -20,4 +20,5 @@ class Shops extends Model
 
 
     ];
+    
 }

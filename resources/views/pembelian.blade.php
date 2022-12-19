@@ -1,14 +1,10 @@
 @extends('layouts.panel')
+@section('title' , 'Pembelian')
 @section('title' , 'Pembelian Spareparts')
 @section('content')
-<<<<<<< HEAD
-<div class="my-3">
-            <a href="/input-pembelian" class="btn btn-primary" role="button" data-bs-toggle="button"> + Tambah  Pembelian</a>
-            </div>
-=======
 
 <div class="my-3">
-  <a href="/input-pembelian" class="btn btn-primary" role="button" data-bs-toggle="button"> + Tambah Jenis Servis</a>
+  <a href="/input-pembelian" class="btn btn-primary" role="button" data-bs-toggle="button"> + Tambah Pembelian</a>
   </div>
 
   @if (Session::has('status'))
@@ -16,7 +12,6 @@
          <i class="fa-solid fa-check"></i> {{ Session::get('message') }}
           </div>
     @endif
->>>>>>> fdf896b2638788f68382c9237461fc12aaa42f3a
             <div class="card">
               <!-- /.card-header -->
               <div class="card-body">
@@ -43,10 +38,7 @@
                         <td>{!! $data->deskripsi !!}</td>
                         <td>{{ $data->harga }}</td>
                         <td>{{ $data->jumlah }}</td>
-<<<<<<< HEAD
                         <td>{{ $data->tanggal }}</td>
-=======
->>>>>>> fdf896b2638788f68382c9237461fc12aaa42f3a
                         <td>{{ $data->foto }}</td>
                         <form action="{{ route('pembelian.destroy', $data->id) }}" method="POST">
                           <td><a href="pembelian-edit/{{ $data->id }}"><button type="button" class="btn btn-info"><i class="fa-regular fa-pen-to-square"></i> Edit</button>{{ $data->action }}</a>

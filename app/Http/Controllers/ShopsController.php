@@ -34,7 +34,7 @@ class ShopsController extends Controller
     public function edit (Request $request, $id){
         $pembelian = Shops::findOrFail($id);
         return view('layouts.pembelian-edit',['pembelian'=>$pembelian]);
->>>>>>> fdf896b2638788f68382c9237461fc12aaa42f3a
+
 }
     public function update (Request $request, $id){
   $pembelian = Shops::findOrFail($id);

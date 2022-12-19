@@ -31,7 +31,7 @@
                         <input type="hidden" class="delete_id" value="{{ $data->id }}">
                         <td>{{ $loop->iteration }}</td>
                         <td>{{ $data->nama }}</td>
-                        <td>{!! $data->jenis_kelamin !!}</td>
+                        <td>{{ $data->jenis_kelamin }}</td>
                         <td>{{ $data->level }}</td>
                         <form action="{{ route('mekanik.destroy', $data->id) }}" method="POST">
                             <td><a href="mekanik-edit/{{ $data->id }}"><button type="button" class="btn btn-info"><i class="fa-regular fa-pen-to-square"></i> Edit</button>{{ $data->action }}</a>

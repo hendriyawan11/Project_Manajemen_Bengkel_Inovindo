@@ -1,9 +1,9 @@
 @extends('layouts.panel')
-@section('title' , 'Semua Spareparts')
+@section('title' , 'Pembelian')
 @section('content')
 
 <div class="my-3">
-  <a href="/input-pembelian" class="btn btn-primary" role="button" data-bs-toggle="button"> + Tambah Jenis Servis</a>
+  <a href="/input-pembelian" class="btn btn-primary" role="button" data-bs-toggle="button"> + Tambah Pembelian</a>
   </div>
 
   @if (Session::has('status'))

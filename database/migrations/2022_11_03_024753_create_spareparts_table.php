@@ -15,7 +15,7 @@ return new class extends Migration
     {
         Schema::create('spareparts', function (Blueprint $table) {
             $table->id();
-            $table->string('nama_sparepart' , 50)->require();
+            $table->string('nama_sparepart' , 50);
             $table->string('merk_sparepart', 20);
             $table->text('deskripsi' ,100);
             $table->integer('stok');

@@ -8,8 +8,10 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\ShopsController;
+use App\Http\Controllers\ReportController;
 use App\Http\Controllers\ServiceController;
 use App\Http\Controllers\MechanicController;
+use App\Http\Controllers\SparepartController;
 use SebastianBergmann\CodeCoverage\Report\Html\Dashboard;
 
 
@@ -35,9 +37,14 @@ Route::get('/order_sparepart', function() {
 Route::get('/jasa-servis', function() {
     return view ('jasa-servis');
 });
-Route::get('/semua-sparepart', function() {
-    return view ('semua-sparepart');
-});
+
+Route::get('/semua-sparepart',[SparepartController::class, 'sparepart'])->name('views.sparepart');
+Route::post('/semua-sparepart',[SparepartController::class, 'store']);
+Route::delete('sparepart/destroy/{id}', [SparepartController::class, 'destroy'])->name('sparepart.destroy');
+
+
+Route::get('/logincoba', [AuthController::class, 'proseslogin'])->name('login');
+Route::post('/login', [AuthController::class, 'authentication'])->name('loginauth');
 
 Route::get('/servis',[ServiceController::class, 'servis'])->name('views.servis');
 Route::get('/input-servis',[ServiceController::class, 'create']);
@@ -53,8 +60,6 @@ Route::get('/mekanik-edit/{id}',[MechanicController::class, 'edit']);
 Route::put('/mekanik/{id}',[MechanicController::class, 'update']);
 Route::delete('mekanik/destroy/{id}', [MechanicController::class, 'destroy'])->name('mekanik.destroy');
 
-
-
 Route::get('/pembelian',[ShopsController::class, 'pembelian'])->name('views.pembelian');
 Route::get('/input-pembelian',[ShopsController::class, 'create']);
 Route::post('/pembelian',[ShopsController::class, 'store']);
@@ -63,14 +68,11 @@ Route::put('/pembelian/{id}',[ShopsController::class, 'update']);
 Route::delete('pembelian/destroy/{id}', [ShopsController::class, 'destroy'])->name('pembelian.destroy');
 
 
-Route::get('/report',[ReportController::class, 'laporan'])->name('views.report');
+Route::get('/report',[ReportController::class, 'report'])->name('views.report');
 Route::post('/report',[ReportController::class, 'store']);
-Route::put('/report/{id}',[ReportController::class, 'update']);
 Route::delete('report/destroy/{id}', [ReportController::class, 'destroy'])->name('report.destroy');
 
-Route::get('/input_servis', function() {
-    return view ('input_servis');
-});
+
 
 Route::get('/checkout', function() {
     return view ('checkout');
@@ -81,9 +83,6 @@ Route::get('/invoice', function() {
 Route::get('/invoice_print', function() {
     return view ('invoice_print');
 });
-
-Route::get('/logincoba', [AuthController::class, 'proseslogin'])->name('login');
-Route::post('/login', [AuthController::class, 'authentication'])->name('loginauth');
 
 // Route::get('/register', function() {
 //     return view ('register',[

@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class Report extends Model
 {
     use HasFactory;
-
+    protected $table ='report';
     protected $fillable =   [
         'tanggal',
         'jenis_transaksi',

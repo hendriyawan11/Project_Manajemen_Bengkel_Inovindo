@@ -35,9 +35,6 @@ Route::get('/order_sparepart', function() {
     return view ('order_sparepart');
 });
 
-Route::get('/semua_sparepart', function() {
-    return view ('semua_sparepart');
-});
 Route::get('/mekanik', function() {
     return view ('mekanik');
 });
@@ -54,9 +51,6 @@ Route::delete('sparepart/destroy/{id}', [SparepartController::class, 'destroy'])
 Route::get('/logincoba', [AuthController::class, 'proseslogin'])->name('login');
 Route::post('/login', [AuthController::class, 'authentication'])->name('loginauth');
 
-Route::get('/jasa-servis', function() {
-    return view ('jasa-servis');
-});
 Route::get('/pembelian',[ShopsController::class, 'shops'])->name('views.pembelian');
 Route::get('/input-pembelian',[ShopController::class, 'create']);
 Route::post('/pembelian',[ShopsController::class, 'store']);
@@ -90,6 +84,9 @@ Route::post('/report',[ReportController::class, 'store']);
 Route::delete('report/destroy/{id}', [ReportController::class, 'destroy'])->name('report.destroy');
 
 
+Route::get('/jasa-servis', function() {
+    return view ('jasa-servis');
+});
 
 Route::get('/checkout', function() {
     return view ('checkout');

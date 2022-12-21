@@ -13,18 +13,13 @@ class ShopsController extends Controller
         return view('pembelian',['itemList' => $pembelian]);
 }
     public function create(){
-    $pembelian = Shops::select('id', 'merk')->get();
+    $pembelian = Shops::select('id', 'nama','merk','deskripsi','tanggal', 'harga', 'jumlah', 'foto')->get();
     return view ('input-pembelian',['pembelian'=>$pembelian]);
 
     }
-    public function store (Request $request){
-        $pembelian = Shops::create([
-            'merk' => request('merk'),
-            'deskripsi' => request('deskripsi'),
-            'harga' => request('harga'),
-            'jumlah' => request('jumlah'),
-            'foto' => request('foto'),
-        ]);
+  public function store (Request $request){
+        $pembelian = Shops::create($request->all());
+
         if ($pembelian){
             Session::flash('status','success');
             Session::flash('message','berhasil menambahkan data baru !');
@@ -34,10 +29,6 @@ class ShopsController extends Controller
     public function edit (Request $request, $id){
         $pembelian = Shops::findOrFail($id);
         return view('layouts.pembelian-edit',['pembelian'=>$pembelian]);
-<<<<<<< HEAD
-
-=======
->>>>>>> d51afd0be2b1f49ca2d7813b1b2ca44fd5682a1b
 }
     public function update (Request $request, $id){
   $pembelian = Shops::findOrFail($id);

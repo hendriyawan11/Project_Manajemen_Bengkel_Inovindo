@@ -15,8 +15,8 @@
                   <thead>
                   <tr>
                     <th>NO</th>
-                    <th>Merk Sparepart</th>
                     <th>Nama Sparepart</th>
+                    <th>Merk Sparepart</th>
                     <th>Deskripsi</th>
                     <th>Stok</th>
                     <th>Harga Jual</th>
@@ -27,8 +27,8 @@
                     @foreach ($itemList as $data )
                     <tr>
                         <td>{{ $loop->iteration }}</td>
-                        <td>{{ $data->merk_sparepart }}</td>
                         <td>{{ $data->nama_sparepart }}</td>
+                        <td>{{ $data->merk_sparepart }}</td>
                         <td>{{ $data->deskripsi }}</td>
                         <td>{{ $data->stok }}</td>
                         <td>{{ $data->harga_jual }}</td>

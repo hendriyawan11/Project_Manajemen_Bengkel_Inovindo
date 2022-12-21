@@ -17,7 +17,7 @@ return new class extends Migration
             $table->id();
             $table->string('nama_sparepart' , 50);
             $table->string('merk_sparepart', 20);
-            $table->text('deskripsi' ,100);
+            $table->longtext('deskripsi' ,100);
             $table->integer('stok');
             $table->decimal('harga_jual');
             $table->string('foto');

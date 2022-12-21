@@ -145,6 +145,19 @@
                                     });
                             }
                         });
+                        $.ajax({
+                            type: "DELETE",
+                            url: 'pembelian/destroy/' + deleteid,
+                            data: data,
+                            success: function (response) {
+                                swal(response.status, {
+                                        icon: "success",
+                                    })
+                                    .then((result) => {
+                                        location.reload();
+                                    });
+                            }
+                        });
                     }
                 });
         });

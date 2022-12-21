@@ -18,6 +18,10 @@
                     <label for="">Deskripsi</label>
                               <textarea name="deskripsi" id="mySummernote"></textarea>
                   </div>
+                      <div class="form-group">
+                    <label for="tanggal">Tanggal</label>
+                    <input type="date" id="tanggal" class="form-control" name="tanggal" placeholder="masukkan tanggal" required>
+                  </div>
                   <div class="form-group">
                     <label for="harga">Harga</label>
                     <input type="text" class="form-control" name="harga" id="harga" placeholder=" Masukkan Harga" required>
@@ -25,10 +29,6 @@
                   <div class="form-group">
                     <label for="jumlah">Jumlah</label>
                     <input type="text" class="form-control" name="jumlah" id="jumlah" placeholder=" Masukkan jumlah Barang" required>
-                  </div>
-                  <div class="form-group">
-                    <label for="tanggal">Tanggal</label>
-                    <input type="date" id="inputSampaiTanggal" class="form-control" name="sampai_tanggal" value="" required>
                   </div>
                  <div class="mb-3">
                 <label for="formFileMultiple" class="form-label">Multiple files input example</label>
@@ -39,4 +39,3 @@
             </div>
             @endsection
 
-            

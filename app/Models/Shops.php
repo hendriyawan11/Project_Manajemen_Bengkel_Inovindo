@@ -10,15 +10,18 @@ class Shops extends Model
     use HasFactory;
 
     protected $fillable =   [
-        'nama',
-        'merk',
-        'deskripsi',
-        'harga',
-        'jumlah',
-        'tanggal',
-        'foto'
+      'nama',
+    'merk',
+    'deskripsi',
+    'tanggal',
+    'harga',
+    'jumlah',
+    'foto',
+    'updated_a',
+    'created_at'
+
 
 
     ];
-    
+
 }

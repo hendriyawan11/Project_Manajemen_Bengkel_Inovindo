@@ -11,14 +11,10 @@ class SparepartController extends Controller
       $sparepart = Sparepart::all();
       return view('semua-sparepart',['itemList' => $sparepart]);
   }
-  
-  public function destroy($id)
-  {
-      $sparepart = Sparepart::find($id);
-      $sparepart->delete();
-      return response()->json(['status' => 'Laporan Berhasil di hapus!']);
+
+
+
+
+
   }
-   
-  }
-  
-  
+

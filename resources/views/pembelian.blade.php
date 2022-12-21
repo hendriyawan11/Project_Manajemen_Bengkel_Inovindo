@@ -15,16 +15,16 @@
             <div class="card">
               <!-- /.card-header -->
               <div class="card-body">
-                <table id="example1" class="table table-bordered table-striped">
+                <table id="shops" class="table table-bordered table-striped">
                   <thead>
                   <tr>
                     <th class="col-1">NO</th>
                     <th>Nama Barang</th>
                     <th>Merk</th>
                     <th>Deskiripsi</th>
+                    <th>Tanggal</th>
                     <th>Harga</th>
                     <th>Jumlah</th>
-                    <th>Tanggal</th>
                     <th>Foto</th>
                     <th>Action</th>
                   </tr>
@@ -32,13 +32,14 @@
                   <tbody>
                     @foreach ($itemList as $data )
                     <tr>
+                        <input type="hidden" class="delete_id" value="{{ $data->id }}">
                         <td>{{ $loop->iteration }}</td>
                         <td>{{ $data->nama }}</td>
                         <td>{{ $data->merk }}</td>
                         <td>{!! $data->deskripsi !!}</td>
+                        <td>{{ $data->tanggal }}</td>
                         <td>{{ $data->harga }}</td>
                         <td>{{ $data->jumlah }}</td>
-                        <td>{{ $data->tanggal }}</td>
                         <td>{{ $data->foto }}</td>
                         <form action="{{ route('pembelian.destroy', $data->id) }}" method="POST">
                           <td><a href="pembelian-edit/{{ $data->id }}"><button type="button" class="btn btn-info"><i class="fa-regular fa-pen-to-square"></i> Edit</button>{{ $data->action }}</a>

@@ -14,19 +14,13 @@ return new class extends Migration
     public function up()
     {
         Schema::create('shops', function (Blueprint $table) {
-            $table->id();
+            $table->bigIncrements('id');
             $table->string('nama');
             $table->string('merk');
-<<<<<<< HEAD
-            $table->longText('deskripsi');
-            $table->decimal('harga');
-            $table->string('jumlah');
-            $table->date('tanggal');
-=======
             $table->longText('deskripsi')->nullable();
+            $table->date('tanggal');
             $table->decimal('harga')->nullable();
             $table->string('jumlah')->nullable();
->>>>>>> fdf896b2638788f68382c9237461fc12aaa42f3a
             $table->string('foto')->nullable();
             $table->timestamps();
         });
